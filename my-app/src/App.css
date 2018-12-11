@@ -1,7 +1,7 @@
 .App{
   width:95%;
   margin:0 auto;
-  max-width:1000px;
+  max-width:1200px;
 }
 .logo{
   max-width:100px;
@@ -74,7 +74,7 @@ input{
 
 .submitButton:hover{
   opacity:0.9;
-  background-color:#836640;
+  background:#00AFD0;
 }
 .books-container{
   display:block;
@@ -105,15 +105,21 @@ h2{
 }
 .checkout{
   display:block;
-  background:#00AFD0;
   padding:1em;
-  width:90%;
+  width:80%;
   margin:0 auto;
   font-size:1.2em;
   border-radius:3px;
   border:none;
   color:white;
   margin-top:1em;
+  text-decoration: none;
+  text-align: center;
+  transition:ease-in 0.4s;
+  background:#99C221;
+}
+.checkout:hover{
+  background:#00AFD0;
 }
 @media only screen and (min-width: 1000px) {
   .book-image{
@@ -134,7 +140,8 @@ h2{
     width:17%;
     vertical-align:top;
     float:right;
-    background:#00AFD0;
     padding:1em 2em;
+    font-weight:600;
+    margin:0;
   }
 }
