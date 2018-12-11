@@ -1,16 +1,15 @@
-
 .App{
-  display: grid;
-}
-header{
-  
+  width:95%;
+  margin:0 auto;
+  max-width:1000px;
 }
 .logo{
   max-width:100px;
-  
+  margin:0 auto;
+  display: block;
 }
-.searcharea{
-    -webkit-appearance: textfield;
+input{
+  -webkit-appearance: textfield;
   background-color: #eef1f4;
   border-radius: 0;
   border-width: 0;
@@ -22,6 +21,7 @@ header{
   max-width: 100%;
   padding: 1rem;
   width: 100%;
+  margin:1em 0;
 }
 .submitButton{
   -webkit-box-align: center;
@@ -30,7 +30,6 @@ header{
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: flex;
   font-size: 1.125rem;
   font-weight: 700;
   height: auto;
@@ -38,8 +37,6 @@ header{
   margin: 0;
   min-width: 15.25rem;
   padding: 0;
-  position: relative;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition-delay: 0s;
@@ -47,4 +44,97 @@ header{
   transition-property: background-color;
   transition-timing-function: ease-in-out;
   width: 100%;
+  padding:1.1em;
+  text-align:center;
+  border-radius:3px;
+}
+.seperator{
+  background:#333;
+  height:150px;
+  margin:2em 0;
+  position:relative;
+  color:white;
+}
+.seperator-text{
+  position:absolute;
+  top:30px;
+  left:20px;
+}
+
+.seperator-text > h1{
+  color:white;
+  margin:0.2em 0 0 0;
+}
+.seperator-text > span {
+  background:#FFC700;
+  color:black;
+  padding:5px;
+  font-size:0.8em;
+}
+
+.submitButton:hover{
+  opacity:0.9;
+  background-color:#836640;
+}
+.books-container{
+  display:block;
+  padding:40px 0;
+  border-bottom:2px dashed lightgrey;
+  cursor:pointer;
+  transition:ease-in 0.4s;
+}
+.books-container:hover{
+  background:whitesmoke;
+}
+.book-image{
+  display:block;
+  margin:0 auto;
+  width:100%;
+  max-width:230px;
+}
+.desc{
+  vertical-align:top;
+  text-align:center;
+}
+h2,h3,p{
+  margin:0.3em 0;
+}
+h2{
+  font-size:1.9em;
+  color:#00AFD0;
+}
+.checkout{
+  display:block;
+  background:#00AFD0;
+  padding:1em;
+  width:90%;
+  margin:0 auto;
+  font-size:1.2em;
+  border-radius:3px;
+  border:none;
+  color:white;
+  margin-top:1em;
+}
+@media only screen and (min-width: 1000px) {
+  .book-image{
+    display:inline-block;
+    width: 40%;
+    max-width:160px;
+    margin:0 auto;
+    border-radius:4px;
+  }
+  .desc{
+    display:inline-block;
+    vertical-align:top;
+    margin-left:50px;
+    text-align:left;
+    width:40%;
+  }
+  .checkout{
+    width:17%;
+    vertical-align:top;
+    float:right;
+    background:#00AFD0;
+    padding:1em 2em;
+  }
 }
