@@ -4,8 +4,8 @@
   max-width:1200px;
 }
 .logo{
-  max-width:300px;
-  margin:0 auto;
+  max-width:400px;
+  margin:1em auto;
   display: block;
 }
 input{
@@ -52,14 +52,14 @@ input{
 }
 .seperator{
   background:#333;
-  height:150px;
+  height:200px;
   margin:2em 0;
   position:relative;
   color:white;
 }
 .seperator-text{
   position:absolute;
-  top:30px;
+  top:50px;
   left:20px;
 }
 
@@ -118,12 +118,13 @@ h2{
   margin-top:1em;
   text-decoration: none;
   text-align: center;
-  transition:ease-in 0.4s;
+  transition:ease-in 0.2s;
   background:#99C221;
   box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
 }
 .checkout:hover{
   background:#00AFD0;
+  transform:scale(1.05);
 }
 @media only screen and (min-width: 1000px) {
   .book-image{
@@ -132,6 +133,8 @@ h2{
     max-width:160px;
     margin:0 auto;
     border-radius:4px;
+  }
+  .book-image:hover{
   }
   .desc{
     display:inline-block;
