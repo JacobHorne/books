@@ -4,7 +4,7 @@
   max-width:1200px;
 }
 .logo{
-  max-width:100px;
+  max-width:300px;
   margin:0 auto;
   display: block;
 }
@@ -37,6 +37,8 @@ input{
   margin: 0;
   min-width: 15.25rem;
   padding: 0;
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  border:none;
   text-decoration: none;
   text-transform: uppercase;
   transition-delay: 0s;
@@ -81,16 +83,17 @@ input{
   padding:40px 0;
   border-bottom:2px dashed lightgrey;
   cursor:pointer;
-  transition:ease-in 0.4s;
+  transition:ease-in 0.2s;
 }
 .books-container:hover{
-  background:whitesmoke;
+  background:rgb(232, 247, 255);
 }
 .book-image{
   display:block;
   margin:0 auto;
   width:100%;
   max-width:230px;
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
 }
 .desc{
   vertical-align:top;
@@ -117,6 +120,7 @@ h2{
   text-align: center;
   transition:ease-in 0.4s;
   background:#99C221;
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
 }
 .checkout:hover{
   background:#00AFD0;
